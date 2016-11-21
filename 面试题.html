@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>面试题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+</head>
+<body>
+	<script>
+		var addCount;
+		function s1(){ 
+		    var count=0;
+		    function s12(){
+		        console.log(count);
+		    };
+		    addCount=function(){
+		        count++;     
+		    };
+		    return s12   
+		};
+		var result1=s1();
+		var result2=s1();
+		var result3=s1();
+		var result4=s1();
+		addCount();
+		addCount();
+		addCount();
+		result1(); 
+		result2();
+		result3();
+		result4();
+
+	</script>
+</body>
+</html>
